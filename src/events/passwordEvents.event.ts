@@ -1,5 +1,5 @@
 import { EventEmitter } from 'events';
-import { UserService } from '../services/user.services';
+import { UserService } from '../services/user.service';
 
 export const passwordEventEmitter = new EventEmitter();
 

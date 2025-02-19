@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { UserService } from "../services/user.services";
+import { UserService } from "../services/user.service";
 import { generateToken } from "../utils/tokenGenerator.utils";
 import { successResponse, errorResponse } from "../utils/response.utils";
 import { USER_MESSAGES, JWT_CONSTANTS } from "../utils/variable.utils";

@@ -1,6 +1,6 @@
 import Joi from "joi";
 import { NextFunction, Request, Response } from "express";
-import { UserService } from "../services/user.services";
+import { UserService } from "../services/user.service";
 
 const usersValidation = Joi.object({
   email: Joi.string()
@@ -32,8 +32,8 @@ const usersValidation = Joi.object({
     "string.max": "Last name cannot exceed 20 characters",
     "any.required": "Last name is required",
   }),
-  role: Joi.string().valid("buyer", "seller", "admin").required().messages({
-    "any.only": 'Role must be either "buyer", "seller", or "admin"',
+  role: Joi.string().valid("host", "renter", "admin").required().messages({
+    "any.only": 'Role must be either "host", "renter", or "admin"',
     "any.required": "Role is required",
   }),
   phone: Joi.string()

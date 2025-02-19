@@ -40,8 +40,8 @@ module.exports = {
         },
       },
       image: {
-        type: Sequelize.STRING,
-        allowNull: true,
+        type: Sequelize.ARRAY(Sequelize.STRING),
+        allowNull: false,
         validate: {
           isUrl: true,
         },

@@ -9,7 +9,7 @@ export interface ListingAttributes {
     category?:string;
     location?:string;
     hostId?:string;
-    image?:string;
+    image?:string[];
     createdAt?:Date;
     updatedAt?:Date;
     availabilityStatus?:boolean;

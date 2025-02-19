@@ -28,7 +28,7 @@ export const sendReasonEmail = (
         If you have any questions or need further assistance, please do not hesitate to contact our support team.
       </p>
       <p style="font-size: 16px; color: #444;">Best regards,</p>
-      <p style="font-size: 16px; color: #444;">Geeklord E-commerce</p>
+      <p style="font-size: 16px; color: #444;">LalaRent</p>
     </div>
   `;
 

@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { UserSignupAttributes } from "../types/user.types";
-import { UserService } from "../services/user.services";
+import { UserService } from "../services/user.service";
 import { generateToken,decodeToken } from "../utils/tokenGenerator.utils";
 // import { sendEmaill } from "../utils/email.utils";
 import { hashPassword, comparePassword } from "../utils/password.utils";

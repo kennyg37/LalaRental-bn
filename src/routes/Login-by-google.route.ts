@@ -5,7 +5,7 @@ import { LoginViaGoogle } from '../controllers/user.controller';
 import { googleAuthenticate } from '../controllers/user.controller';
 import { googleAuthFailed } from '../controllers/user.controller';
 
-import '../services/Login-By-Google.services'
+import '../services/Login-By-Google.service'
 
 const router = express.Router();
 

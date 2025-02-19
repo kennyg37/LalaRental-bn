@@ -13,7 +13,7 @@ class Listing
   declare category: string;
   declare location: string;
   declare hostId: string;
-  declare image: string;
+  declare image: string[];
   declare availabilityStatus: boolean;
   declare createdAt: Date;
   declare updatedAt: Date;
@@ -40,11 +40,11 @@ Listing.init(
       allowNull: false,
     },
     image: {
-      type: DataTypes.STRING,
-      allowNull: true,
+      type: DataTypes.ARRAY(DataTypes.STRING),
+      allowNull: false,
       validate: {
         isUrl: true,
-      },
+      }
     },
     category: {
       type: DataTypes.ENUM("Apartment", "House", "Villa", "Studio", "Room"),
