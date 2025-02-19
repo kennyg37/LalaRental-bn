@@ -33,7 +33,7 @@ export const createListing = async (req: Request, res: Response) => {
             category: req.body.category,
             price: req.body.price,
             location: req.body.location,
-            hostId: req.body.hostId,
+            hostId: req.user?.id as string,
             image: imageUrls,
         }
 

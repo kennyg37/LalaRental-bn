@@ -11,6 +11,7 @@ import dotenv from "dotenv";
 import { initSocket } from "./socketio";
 import http from "http";
 import listingRoutes from "./routes/listing.routes";
+import bookingRouter from "./routes/booking.routes";
 dotenv.config();
 
 const app = express();
@@ -44,6 +45,7 @@ app.get("/", (_req: Request, res: Response) => {
 app.use("/api/users", userRoutes);
 app.use("/api", LoginByGoogleRoute);
 app.use("/api/listing", listingRoutes)
+app.use("/api/booking", bookingRouter )
 
 
 export default app;
