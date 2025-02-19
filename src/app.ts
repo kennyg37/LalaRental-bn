@@ -1,16 +1,16 @@
 import express from "express";
 import { Request, Response } from "express";
-import userRoutes from "./routes/user.route";
+import userRoutes from "./routes/user.routes";
 import morgan from "morgan";
 import cors from 'cors';
 import bodyParser from "body-parser";
 import session from "express-session";
 import passport from "passport";
-import LoginByGoogleRoute from "../src/routes/Login-by-google.route";
+import LoginByGoogleRoute from "./routes/Login-by-google.routes";
 import dotenv from "dotenv";
 import { initSocket } from "./socketio";
 import http from "http";
-import listingRoutes from "./routes/listing.route";
+import listingRoutes from "./routes/listing.routes";
 dotenv.config();
 
 const app = express();
