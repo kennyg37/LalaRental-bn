@@ -5,6 +5,10 @@ export class BookingService {
     static async createBooking(booking: AddBookingAttributes) {
         return await Booking.create(booking);
     }
+
+    static async getallBookings() {
+        return await Booking.findAll();
+    }
     
     static async getBookingById(id: string) {
         return await Booking.findOne({ where: { id: id } });
